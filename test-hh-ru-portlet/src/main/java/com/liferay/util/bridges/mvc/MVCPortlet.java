@@ -15,7 +15,6 @@ public class MVCPortlet extends GenericPortlet {
     @Override
     public void doView(RenderRequest request, RenderResponse response)
             throws PortletException, IOException {
-
         response.setContentType(request.getResponseContentType());
         PortletContext context = getPortletConfig().getPortletContext();
         context.getRequestDispatcher(VIEW_JSP).include(request, response);
